@@ -20,5 +20,10 @@ void BartDecoder<T>::initialize()
                                                     0,
                                                     custom_all_reduce_comm_,
                                                     enable_custom_all_reduce_);
+
+    // (1.0f/ sqrtf((float)size_per_head_)) 
+    cross_attention_layer_ = 
+      new TensorParallelDecoderCrossAttentionLayer<T>(max_batch_size_,
+                                    )
 }
 }
