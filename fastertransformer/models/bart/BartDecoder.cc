@@ -35,6 +35,8 @@ void BartDecoder<T>::initialize()
                                                       custom_all_reduce_comm_,
                                                       enable_custom_all_reduce_);
 
-  bool
+  bool use_gated_activation = activation_type_ == ActivationType::GeGLU || activation_type_ == ActivationType::ReGLU
+                              || activation_type_ == ActivationType::SiGLU;
+
 }
 }
