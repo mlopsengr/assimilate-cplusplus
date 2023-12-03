@@ -38,5 +38,8 @@ void BartDecoder<T>::initialize()
   bool use_gated_activation = activation_type_ == ActivationType::GeGLU || activation_type_ == ActivationType::ReGLU
                               || activation_type_ == ActivationType::SiGLU;
 
+  if (activation_type_ == ActivationType
+
 }
+
 }
