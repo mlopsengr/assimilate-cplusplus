@@ -39,7 +39,7 @@ void BartDecoder<T>::initialize()
                               || activation_type_ == ActivationType::SiGLU;
 
   if (activation_type_ == ActivationType::Gelu || activation_type_ == ActivationType::GeGLU) {
-    ffn_layer_ = new TensorParallelDecoderCrossAttentionLayer
+    ffn_layer_ = new TensorParallelDecoderCrossAttentionLayer<T>(max_batch_size_)
   }
 
 }
