@@ -42,7 +42,11 @@ void BartDecoder<T>::initialize()
     ffn_layer_ = new TensorParallelDecoderCrossAttentionLayer<T>(max_batch_size_,
                                                                  1,
                                                                  1,
-                                                                 d_model_d
+                                                                 d_model_,
+                                                                 0,
+                                                                 inter_size_,
+                                                                 tensor_para_,)
+
   }
 
 }
