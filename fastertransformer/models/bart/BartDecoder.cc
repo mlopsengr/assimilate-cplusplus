@@ -59,7 +59,8 @@ void BartDecoder<T>::initialize()
 
   }
   else if (activation_type_ == ActivationType::RElu || activation_type_ == ActivationType::ReGLU){
-    ffn_layer_ = 
+    ffn_layer_ = new TensorParallelReluFfnLayer<T>(max_batch_size_,
+        ) 
   }
 
 }
