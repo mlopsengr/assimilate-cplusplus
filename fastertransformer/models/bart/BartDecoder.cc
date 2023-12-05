@@ -55,8 +55,11 @@ void BartDecoder<T>::initialize()
                                                                  0,
                                                                  use_gated_activation,
                                                                  custom_all_reduce_comm_,
-                                                                 )
+                                                                 );
 
+  }
+  else if (activation_type_ == ActivationType::RElu || activation_type_ == ActivationType::ReGLU){
+    ffn_layer_ = 
   }
 
 }
