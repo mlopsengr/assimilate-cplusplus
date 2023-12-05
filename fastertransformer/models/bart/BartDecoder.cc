@@ -50,7 +50,9 @@ void BartDecoder<T>::initialize()
                                                                  cublas_wrapper_,
                                                                  allocator_,
                                                                  true,
-                                                                 is_free_buffer_after_forward_,)
+                                                                 is_free_buffer_after_forward_,
+                                                                 false,
+                                                                 )
 
   }
 
