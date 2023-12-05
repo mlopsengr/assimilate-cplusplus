@@ -54,7 +54,7 @@ void BartDecoder<T>::initialize()
                                                                  false,
                                                                  0,
                                                                  use_gated_activation,
-
+                                                                 custom_all_reduce_comm_,
                                                                  )
 
   }
