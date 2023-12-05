@@ -52,6 +52,9 @@ void BartDecoder<T>::initialize()
                                                                  true,
                                                                  is_free_buffer_after_forward_,
                                                                  false,
+                                                                 0,
+                                                                 use_gated_activation,
+
                                                                  )
 
   }
