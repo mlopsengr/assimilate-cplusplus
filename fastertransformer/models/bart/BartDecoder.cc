@@ -62,7 +62,7 @@ void BartDecoder<T>::initialize()
     ffn_layer_ = new TensorParallelReluFfnLayer<T>(max_batch_size_,
                                                    1,
                                                    1,
-                                                   ) 
+                                                   d_model_) 
   }
 
 }
