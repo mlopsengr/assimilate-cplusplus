@@ -64,7 +64,8 @@ void BartDecoder<T>::initialize()
                                                    1,
                                                    d_model_,
                                                    0,
-                                                   inter_size_,) 
+                                                   inter_size_,
+                                                   tensor_para_,) 
   }
 
 }
