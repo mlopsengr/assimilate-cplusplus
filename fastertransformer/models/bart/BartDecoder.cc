@@ -63,7 +63,8 @@ void BartDecoder<T>::initialize()
                                                    1,
                                                    1,
                                                    d_model_,
-                                                   0,) 
+                                                   0,
+                                                   inter_size_,) 
   }
 
 }
