@@ -77,6 +77,9 @@ void BartDecoder<T>::initialize()
                                                   custom_all_reduce_comm_,
                                                   enable_custom_all_reduce_); 
   }
+  else if (activation_type_ == ActivationType::Silu || activation_type_ == ActivationType::SiGLU){
+
+  }
 
 }
 
