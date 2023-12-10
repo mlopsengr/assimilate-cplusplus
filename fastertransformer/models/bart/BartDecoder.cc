@@ -78,7 +78,10 @@ void BartDecoder<T>::initialize()
                                                   enable_custom_all_reduce_); 
   }
   else if (activation_type_ == ActivationType::Silu || activation_type_ == ActivationType::SiGLU){
-
+      ffn_layer_ = new TensorParallelSiluFfnlayer<T>(max_batch_size_,
+                                                    1,
+                                                    1,
+                                                    d_model_,)
   }
 
 }
