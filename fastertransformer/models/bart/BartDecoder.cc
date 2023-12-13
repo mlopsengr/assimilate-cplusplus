@@ -86,6 +86,10 @@ void BartDecoder<T>::initialize()
                                                     inter_size_,
                                                     tensor_para_,
                                                     stream_,
+                                                    cublas_wrapper_,
+                                                    allocator_,
+                                                    true,
+                                                    
                                                     )
   }
 
