@@ -89,8 +89,12 @@ void BartDecoder<T>::initialize()
                                                     cublas_wrapper_,
                                                     allocator_,
                                                     true,
-                                                    
-                                                    )
+                                                    is_free_buffer_after_forward_,
+                                                    false,
+                                                    use_gated_activation,
+                                                    custom_all_reduce_comm_,
+                                                    enable_custom_all_reduce_
+                                                    );
   }
 
 }
