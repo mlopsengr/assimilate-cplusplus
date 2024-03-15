@@ -6,7 +6,6 @@ namespace fastertransformer {
 
 
 
-
 template<typename T>
 void BartDecoder<T>::initialize()
 {
