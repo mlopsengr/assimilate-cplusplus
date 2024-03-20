@@ -1,5 +1,4 @@
 #include "src/fastertransformer/models/bart/BartDecoder.h"
-
 namespace fastertransformer {
 template<typename T>
 void BartDecoder<T>::initialize()
