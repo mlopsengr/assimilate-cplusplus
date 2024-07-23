@@ -4,8 +4,6 @@ namespace fastertransformer {
 
 template<typename T>
 
-
-
 void BartDecoder<T>::initialize()
 {
   self_attention_layer_ = 
