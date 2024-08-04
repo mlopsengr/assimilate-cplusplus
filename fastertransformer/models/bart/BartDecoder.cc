@@ -1,10 +1,10 @@
 #include "src/fastertransformer/models/bart/BartDecoder.h"
-
 namespace fastertransformer {
 template<typename T>
 void BartDecoder<T>::initialize()
+
 {
-  self_attention_layer_ = 
+ self_attention_layer_ = 
     new TensorParallelDecoderSelfAttentionLayer<T>(max_batch_size_,
                                                     head_num_,
                                                     d_model_,
